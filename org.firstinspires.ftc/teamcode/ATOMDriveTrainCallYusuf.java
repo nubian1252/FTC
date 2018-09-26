@@ -87,11 +87,28 @@ public class ATOMDriveTrainCallYusuf extends LinearOpMode {
              telemetry.update();
              ATOMDriveTrain ATOMDriveTrain = new ATOMDriveTrain(robot) ;
              //DriveTrain.PDrive(leftPower,rightPower,5.0); // Move Forward for 5 Seconds
-             ATOMDriveTrain.EDrive(leftPower,24,24,10,180); // Move Forward for 5 Seconds
-             ATOMDriveTrain.EDrive(leftPower,24,24,10,180);
-             ATOMDriveTrain.EDrive(leftPower,-24,-24,10,180);
-             ATOMDriveTrain.EDrive(leftPower,-24,-24,10,180);
-        
+             ATOMDriveTrain.EDrive(leftPower,30,30,10,0); // Move Forward for 5 Seconds
+             ATOMDriveTrain.EDrive(leftPower,0,0,5,90);
+            
+             ATOMDriveTrain.EDrive(leftPower,30,30,10,0);
+            
+             ATOMDriveTrain.EDrive(leftPower,0,0,5,90);
+            
+             ATOMDriveTrain.Edrive(leftPower,30,30,10,0);
+            
+             ATOMDriveTrain.Edrive(leftPower,0,0,5,90);
+            
+             ATOMDriveTrain.Edrive(leftPower,30,30,10,0);
+            
+             ATOMDriveTrain.Edrive(leftPower,0,0,1,90);
+            
+             ATOMDriveTrain.EDrive(leftPower,0,0,1,90);
+            
+             ATOMDriveTrain.EDrive(leftPower,0,0,1,90);
+            
+             ATOMDriveTrain.EDrive(leftPower,0,0,1,90);
+            
+             ATOMDriveTrain.EDrive(leftServo,0,0,5,90);
             // Show the elapsed game time and wheel power.
             telemetry.addData("Status", "Run Time: " + runtime.toString());
             telemetry.addData("Motors", "left (%.2f), right (%.2f)", leftPower, rightPower);
